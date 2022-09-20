@@ -9,7 +9,7 @@ public class Array3 {
 
         Arrays.parallelSort(number, 0,6);
         for (int i : number) {
-            System.out.print(i);
+            System.out.print(i + " ");
         }
     }
 }
