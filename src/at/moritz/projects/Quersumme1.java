@@ -11,11 +11,10 @@ public class Quersumme1 {
             for (int i = 0; i < numbers.length; i++) {
                 sum += Character.getNumericValue(numbers[i]);
             }
-
-            if (sum == 15) {
-                System.out.println(numbers);
-                System.out.println(sum);
-            }
+            System.out.println(sum);
+            //if (sum == 15) {
+            //  System.out.println(numbers);
+            //System.out.println(sum);
         }
     }
 }

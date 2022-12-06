@@ -7,7 +7,7 @@ public class Quersumme4 {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
 
-        while (number > 10){
+        while (number > 9){
             String NumberAsString = Integer.toString(number);
             char[] number2 = NumberAsString.toCharArray();
             int sum = 0;

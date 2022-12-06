@@ -8,8 +8,9 @@ public class Array1 {
         int data1 = 0;
 
         for (int i = 0; i < data.length; i++) {
-            data1 += data[i];
+            data1 = data[i];
+            System.out.println(data1);
         }
-        System.out.println(data1);
+
     }
 }
