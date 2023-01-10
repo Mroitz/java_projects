@@ -21,6 +21,6 @@ public class main {
 
         c1.honk(1);
 
-        c1.getRemainingRange();
+        c2.getRemainingRange();
     }
 }

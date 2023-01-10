@@ -7,12 +7,12 @@ public class cars {
     private String color;
     public String brand;
     public int fuelcapacity;
-    public int fuel;
+    public int aktivfuel;
     public int range;
 
     public void drive(){
-        this.fuel = this.fuelcapacity - this.fuelconsumption;
-        System.out.println("fuelamount is " + this.fuel +" liters");
+        this.aktivfuel = this.fuelcapacity - this.fuelconsumption;
+        System.out.println("fuelamount is " + this.aktivfuel +" liters");
     }
 
     public void Break(){
@@ -20,7 +20,7 @@ public class cars {
     }
 
     public void turboBoost(){
-        if(this.fuel > (0.1 * this.fuelcapacity)) {
+        if(this.aktivfuel > (0.1 * this.fuelcapacity)) {
             System.out.println("SuperBoostMode");
         }
         else{
@@ -34,7 +34,7 @@ public class cars {
     }
 
     public void getRemainingRange(){
-        range = this.fuel / this.fuelconsumption;
+        range = this.aktivfuel / this.fuelconsumption;
         System.out.println(range + "km");
     }
 }
