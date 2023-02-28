@@ -19,7 +19,7 @@ public class Car {
         this.serialnumber = snumber;
     }
 
-    public void drive() {
+    public void fuelamount() {
         this.aktivfuel = this.fuelcapacity - this.fuelconsumption;
         System.out.println("fuelamount is " + this.aktivfuel + " liters");
     }
