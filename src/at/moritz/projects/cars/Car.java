@@ -1,7 +1,13 @@
 package at.moritz.projects.cars;
 
+import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Car {
+    private List<Wheels> wheels;
     private Engine engine;
+    private List<RearMirror> mirrors;
     private int fuelconsumption;
     private String serialnumber;
     private String color;
@@ -17,6 +23,23 @@ public class Car {
         this.color = color;
         this.brand = brand;
         this.serialnumber = snumber;
+        this.mirrors = new ArrayList<>();
+    }
+
+    public void addWheel(Wheels wheels) {
+        this.wheels.add(wheels);
+    }
+
+    public List<Wheels> getWheels() {
+        return wheels;
+    }
+
+    public void addMirror(RearMirror rearMirror) {
+        this.mirrors.add(rearMirror);
+    }
+
+    public List<RearMirror> getMirrors() {
+        return mirrors;
     }
 
     public void fuelamount() {
