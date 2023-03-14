@@ -5,7 +5,7 @@ public class Producer {
     private String origincountry;
     private double discount;
 
-    public Producer(String name, String origincountry, int discount) {
+    public Producer(String name, String origincountry, double discount) {
         this.name = name;
         this.origincountry = origincountry;
         this.discount = discount;
