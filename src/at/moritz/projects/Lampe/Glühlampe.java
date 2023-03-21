@@ -12,6 +12,7 @@ public class Glühlampe {
         this.color = color;
     }
 
+
     public String getName() {
         return name;
     }
@@ -49,7 +50,9 @@ public class Glühlampe {
             System.out.println("Mein Name ist" + this.name +  ". Ich bin bereits eingeschaltet");
         }
         else {
-            powercon += 5;
+            this.powercon += 5;
+            System.out.println("Mein Name ist" + this.name +  ". Ich bin jetzt eingeschaltet");
+            System.out.println(powercon);
         }
     }
 }
