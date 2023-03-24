@@ -15,7 +15,5 @@ public class mainRechner {
         cs1.cosinus();
 
         rc1.root();
-
-
     }
 }
