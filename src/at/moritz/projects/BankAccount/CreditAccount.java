@@ -1,7 +1,6 @@
 package at.moritz.projects.BankAccount;
 
 public class CreditAccount extends BaseAccount{
-    private int balance;
     private int limit;
 
     public CreditAccount(int balance, int limit) {
@@ -10,11 +9,11 @@ public class CreditAccount extends BaseAccount{
     }
 
     public void withdraw(int withdraw){
-        if (balance - withdraw >= limit * -1){
-            balance -= withdraw;
+        if (getBalance() - withdraw >= limit){
+            setBalance(getBalance() - withdraw);
             System.out.println(withdraw +"$ have been withdrawn");
         } else {
-            System.out.println("not enough money");
+            System.out.println("exceeds limit");
         }
     }
 }

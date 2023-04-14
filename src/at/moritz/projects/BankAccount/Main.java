@@ -2,13 +2,14 @@ package at.moritz.projects.BankAccount;
 
 public class Main {
     public static void main(String[] args) {
-        SavingAccount s1 = new SavingAccount(1000);
-        CheckingAccount c1 = new CheckingAccount(5000,1000);
-        CreditAccount cr1 = new CreditAccount(0, 1000);
+        SavingAccount s1 = new SavingAccount(0);
+        CheckingAccount c1 = new CheckingAccount(0,-1000);
+        CreditAccount cr1 = new CreditAccount(0, -1000);
 
-        s1.withdraw(400);
+        cr1.deposit(0);
+        cr1.withdraw(500);
+        cr1.returnBalance();
 
-        c1.getBalance();
-        c1.withdraw(2000);
+
     }
 }

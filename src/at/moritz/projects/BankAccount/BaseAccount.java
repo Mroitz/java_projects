@@ -11,12 +11,15 @@ public class BaseAccount {
         return balance;
     }
 
+    public void returnBalance(){
+        System.out.println(balance);
+    }
     public void setBalance(int balance) {
         this.balance = balance;
     }
 
     public void deposit(int deposit){
-        this.balance += deposit;
+        setBalance(getBalance()+deposit);
         System.out.println(balance + "$ have been deposited");
     }
 }

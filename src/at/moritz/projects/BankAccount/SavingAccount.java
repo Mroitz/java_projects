@@ -8,9 +8,8 @@ public class SavingAccount extends BaseAccount {
     public void withdraw(int withdraw) {
         if (withdraw >= getBalance()) {
             System.out.println("not enough money");
-
         } else {
-            getBalance() -= withdraw;
+            setBalance(getBalance() - withdraw);
             System.out.println(withdraw + "$ have been withdrawn" );
         }
 
