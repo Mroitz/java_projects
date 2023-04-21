@@ -9,6 +9,18 @@ public class Figure {
         this.length = length;
     }
 
+    public double getLength() {
+        return length;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
     public void getName(){
         System.out.println(name);
     }
