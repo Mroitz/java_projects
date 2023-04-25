@@ -5,7 +5,7 @@ public class main {
         cube c1 = new cube("Würfel",5);
         rectangle r1 = new rectangle("Viereck",5,4);
         square s1 = new square("Square",8);
-        circle cr1 = new circle("Kreis",5);
+        circle cr1 = new circle("Kreis",4);
 
         c1.getArea();
         r1.getArea();
