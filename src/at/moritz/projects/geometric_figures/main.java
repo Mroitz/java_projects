@@ -11,7 +11,5 @@ public class main {
         r1.getArea();
         s1.getArea();
         cr1.getArea();
-
-
     }
 }
