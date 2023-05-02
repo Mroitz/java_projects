@@ -15,10 +15,6 @@ public class SD_Card {
         files.add(file);
     }
 
-    public int getCapacity() {
-        return capacity;
-    }
-
     public void getFiles() {
         for (int i = 0; i < files.size(); i++) {
             this.files.get(i).getInfo();
@@ -31,5 +27,8 @@ public class SD_Card {
             size += this.files.get(i).getSize();
         }
         return capacity - size;
+    }
+    public int getCapacity() {
+        return capacity;
     }
 }
