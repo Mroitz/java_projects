@@ -19,7 +19,17 @@ public class SD_Card {
         return capacity;
     }
 
-    public List<PhoneFile> getFiles() {
-        return files;
+    public void getFiles() {
+        for (int i = 0; i < files.size(); i++) {
+            this.files.get(i).getInfo();
+        }
+    }
+
+    public int getFreeSpace() {
+        int size = 0;
+        for (int i = 0; i < files.size(); i++) {
+            size += this.files.get(i).getSize();
+        }
+        return capacity - size;
     }
 }

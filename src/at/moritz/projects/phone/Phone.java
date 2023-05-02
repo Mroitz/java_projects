@@ -1,6 +1,7 @@
 package at.moritz.projects.phone;
 
 import javax.xml.namespace.QName;
+import java.util.List;
 
 public class Phone {
     private SD_Card card;
@@ -16,18 +17,21 @@ public class Phone {
         this.color = color;
     }
 
-    public void makeCall(String number){
+    public void makeCall(String number) {
         this.sim.doCall(number);
     }
 
-    public void takePicture(){
+    public void takePicture() {
         PhoneFile file = this.camera.takePicture();
         this.card.save(file);
     }
 
-    public void PrintAllFiles(){
+    public void PrintAllFiles() {
+        this.card.getFiles();
+    }
 
-
+    public int getFreeSpace(){
+        return this.card.getFreeSpace();
     }
 
 
