@@ -5,9 +5,8 @@ public class Main {
         Lens lens = new Lens("Canon", 5000);
         SD_card card = new SD_card(10);
 
-        Camera cam = new Camera(lens,card,4000,500,"black", "Canon","America");
+        Camera cam = new Camera(lens,card,4000,500,"black",new Producer("Canon","Austria"), Camera.Resolution.small);
 
         cam.takePicture();
-        System.out.println();
     }
 }

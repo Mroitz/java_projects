@@ -1,7 +1,5 @@
 package at.moritz.projects.Lampe;
 
-import remote.battery;
-
 import java.util.ArrayList;
 import java.util.List;
 

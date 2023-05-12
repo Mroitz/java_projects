@@ -3,12 +3,20 @@ package at.moritz.projects.Camera;
 public class PictureFiles {
     private String name;
     private String date;
-    private Size size;
-    public enum Size {small,medium,big}
-    public PictureFiles(String name, String date, Size size) {
-        this.name = name;
-        this.date = date;
-        this.size = size;
+    public PictureFiles(String name, String date, Camera.Resolution resolution) {
+        System.out.println(this.name = name);
+        System.out.println(this.date = date);
+
+        if (resolution == Camera.Resolution.small){
+
+            System.out.println("2gb");
+        }
+        if (resolution == Camera.Resolution.medium){
+            System.out.println("4gb");
+        }
+        if (resolution == Camera.Resolution.big){
+            System.out.println("6gb");
+        }
     }
 
     public String getName() {
@@ -19,10 +27,6 @@ public class PictureFiles {
         return date;
     }
 
-    public Size getSize() {
-        return size;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -31,7 +35,4 @@ public class PictureFiles {
         this.date = date;
     }
 
-    public void setSize(Size size) {
-        this.size = size;
-    }
 }

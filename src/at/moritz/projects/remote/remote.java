@@ -1,7 +1,4 @@
-package remote;
-
-import at.moritz.projects.cars.Wheels;
-import jdk.dynalink.beans.StaticClass;
+package at.moritz.projects.remote;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -3,6 +3,7 @@ package at.moritz.projects.Camera;
 import at.moritz.projects.phone.PhoneFile;
 
 import java.util.List;
+import java.util.Set;
 
 public class SD_card {
     private int capacity;
@@ -13,9 +14,16 @@ public class SD_card {
         this.pictures = pictures;
     }
 
-    public void save (PictureFiles Pic){
-        pictures.add(Pic);
+    public void Save (PictureFiles Pic){
+        System.out.println();
+
+        this.capacity += getCapacity();
+        System.out.println(capacity);
+        if (capacity > 1){
+            System.out.println("Capacity is full. You can either add a new SD-Card or delete Pics");
+        }
     }
+
 
     public int getCapacity() {
         return capacity;

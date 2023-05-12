@@ -1,6 +1,4 @@
-package remote;
-
-import jdk.jshell.Snippet;
+package at.moritz.projects.remote;
 
 public class main {
     public static void main(String[] args) {

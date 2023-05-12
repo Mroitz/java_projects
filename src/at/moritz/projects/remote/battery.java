@@ -1,4 +1,4 @@
-package remote;
+package at.moritz.projects.remote;
 
 public class battery {
     private int Batterystate;
